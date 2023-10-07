@@ -10,11 +10,31 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-roboto)"],
+        title: ["var(--font-j_sans)"],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        microtv: {
+          50: "#FBE9E7",
+          100: "#FFCCBC",
+          200: "#FFAB91",
+          300: "#FF8A65",
+          400: "#FF7043",
+          500: "#FF5722",
+          600: "#F4511E",
+          700: "#E64A19",
+          800: "#D84315",
+          900: "#BF360C",
+        },
+        background: {
+          200: "#707070",
+          300: "#606060",
+          400: "#505050",
+          500: "#404040",
+          600: "#303030",
+          700: "#202020",
+          800: "#101010",
+          900: "#000000",
+        },
       },
     },
   },
