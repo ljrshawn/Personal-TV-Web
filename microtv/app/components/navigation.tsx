@@ -46,7 +46,6 @@ export default function Navigation() {
       >
         <a
           className="
-          fixed
           flex-auto
           px-6
           justify-center
@@ -99,24 +98,31 @@ export default function Navigation() {
         flex
         flex-row
         items-center
-        w-1/3
-        m-auto
+        w-full
+        p-2
+        lg:w-1/3
+        lg:m-auto
         text-base
+        border-microtv-600
+        border-dashed
+        border-2
+        rounded-full
+        focus-within:border-none
       "
       >
         <input
           className="
             placeholder:text-microtv-50
             placeholder:italic
-            bg-background-700
+            bg-background-800
             focus:bg-microtv-50
             focus:text-background-800
-            focus:outline-microtv-300
-            focus:outline
+            focus:outline-microtv-600
             focus:outline-2
-            rounded-lg
+            focus:outline-none
+            rounded-l-full
             w-full
-            h-12
+            h-10
             pl-10
             "
           placeholder="Search for something..."
@@ -125,12 +131,23 @@ export default function Navigation() {
         />
         <button
           className="
-            absolute
-            pl-1
+            flex
+            ml-2
+            rounded-r-full
+            active:text-microtv-300
+            bg-microtv-500
           "
           type="submit"
         >
-          Sub
+          <span
+            className="
+            p-2
+            xl:text-2xl
+            material-icons-outlined
+          "
+          >
+            search
+          </span>
         </button>
       </div>
     </div>
